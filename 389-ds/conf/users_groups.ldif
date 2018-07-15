@@ -1,6 +1,86 @@
-dn: cn=admin,dc=example,dc=edu
+dn: cn=admin,dc=capitol,dc=com
 objectClass: simpleSecurityObject
 objectClass: organizationalRole
 cn: admin
 userPassword: password
 description: LDAP administrator
+
+dn: uid=adam.yauch,ou=People,dc=capitol,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+gidNumber: 666
+uidNumber: 10001
+sn: Yauch
+cn: Adam Yauch
+givenName: Adam
+mail: adam.yauch@hellonasty.c0m
+loginShell: /bin/bash
+userPassword:: e1NTSEF9MGhpRnRybmkwbkE5MHpjVnQ2d2ZYTFhTSjB2UkpQbGQ5MmVIcHc9PQ=
+ =
+homeDirectory: /home/adam.yauch
+
+dn: uid=michael.schwartz,ou=People,dc=capitol,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+gidNumber: 666
+uidNumber: 10002
+sn: Schwartz
+cn: Michael Schwartz
+givenName: Michael
+mail: michael.schwartz@hellonasty.c0m
+loginShell: /bin/bash
+userPassword:: e1NTSEF9MGhpRnRybmkwbkE5MHpjVnQ2d2ZYTFhTSjB2UkpQbGQ5MmVIcHc9PQ=
+ =
+homeDirectory: /home/michael.schwartz
+
+dn: uid=mike.diamond,ou=People,dc=capitol,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+gidNumber: 666
+uidNumber: 10003
+sn: Diamond
+cn: Mike Diamond
+givenName: Mike
+mail: mike.diamond@hellonasty.c0m
+loginShell: /bin/bash
+userPassword:: e1NTSEF9MGhpRnRybmkwbkE5MHpjVnQ2d2ZYTFhTSjB2UkpQbGQ5MmVIcHc9PQ=
+ =
+homeDirectory: /home/mike.diamond
+
+dn: uid=adam.horovitz,ou=People,dc=capitol,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+gidNumber: 666
+uidNumber: 10004
+sn: Horobitz
+cn: Adam Horovitz
+givenName: Adam
+mail: adam.horovitz@hellonasty.c0m
+loginShell: /bin/bash
+userPassword:: e1NTSEF9MGhpRnRybmkwbkE5MHpjVnQ2d2ZYTFhTSjB2UkpQbGQ5MmVIcHc9PQ=
+ =
+homeDirectory: /home/adam.horovitz
+
+dn: cn=beastie,ou=Groups,dc=capitol,dc=com
+description: Hot Sauce Committee Part Two
+uniqueMember: uid=adam.yauch,ou=People,dc=capitol,dc=com
+uniqueMember: uid=michael.schwartz,ou=People,dc=capitol,dc=com
+uniqueMember: uid=mike.diamond,ou=People,dc=capitol,dc=com
+uniqueMember: uid=adam.horovitz,ou=People,dc=capitol,dc=com
+cn: surrealists
+gidNumber: 3333
+objectClass: groupofuniquenames
+objectClass: top
+objectClass: posixgroup
