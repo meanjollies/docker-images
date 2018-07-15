@@ -1,5 +1,5 @@
 [General]
-AdminDomain = example.edu
+AdminDomain = capitol.com
 ConfigDirectoryAdminID = admin
 ConfigDirectoryAdminPwd = admin
 ConfigDirectoryLdapURL = ldap://localhost:389/o=NetscapeRoot
@@ -24,5 +24,6 @@ RootDNPwd = password
 ServerIdentifier = dir
 ServerPort = 389
 SlapdConfigForMC = yes
-Suffix = dc=example,dc=edu
+Suffix = dc=capitol,dc=com
 UseExistingMC = No
+ConfigFile = /additional-conf.ldif
