@@ -1,21 +1,25 @@
 Simple 389-ds 
 =============
 
-This image is perfect if you need to spin-up a clean ldap image for testing. This is great for integration testing.
+This image provides a 389DS instance without immediate TLS authentication support.
+
+## Configuration
+Sample configurations are provided under the included conf directory. All default passwords are `password`.
 
 ## Usage
-Update the `users.ldif` file and then rebuild the image:
+
+A simple `docker-compose up` will do, if you're into that sort of thing. Or you can build it manually:
 
 ```
-docker build --tag="jtgasper3/389ds-basic" .
+docker build --tag="meanjollies/389ds" .
 ```
 
-To start a container:
+To start it:
 
 ```
-docker run -d -p 10389:389 --name="ldap-server" jtgasper3/389ds-basic
+docker run -itp 389:389 meanjollies/389ds
 ```
 
-To connect to the instance, point your favorite ldap browser to `localhost:10389` and connect with `cn=Directory Manager` and `password`.
+To connect to the instance, point your favorite LDAP browser to `localhost:389` and connect with `cn=Directory Manager` and `password`.
 
 Need to reset the ldap instance? Just stop and remove the container. Then start a new instance.
