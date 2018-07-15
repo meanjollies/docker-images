@@ -1,0 +1,89 @@
+dn: cn=config
+changetype: modify
+add: passwordMaxAge
+passwordMaxAge: 7776000
+
+dn: cn=config
+changetype: modify
+add: passwordMinAlphas
+passwordMinAlphas: 1
+
+dn: cn=config
+changetype: modify
+add: passwordExp
+passwordExp: on
+
+dn: cn=config
+changetype: modify
+add: passwordMinAge
+passwordMinAge: 86400
+
+dn: cn=config
+changetype: modify
+add: passwordMinDigits
+passwordMinDigits: 1
+
+dn: cn=config
+changetype: modify
+add: passwordMinSpecials
+passwordMinSpecials: 1
+
+dn: cn=config
+changetype: modify
+add: passwordWarning
+passwordWarning: 86400
+
+dn: cn=config
+changetype: modify
+add: nsslapd-pwpolicy-local
+nsslapd-pwpolicy-local: on
+
+dn: cn=config
+changetype: modify
+add: passwordMinLowers
+passwordMinLowers: 1
+
+dn: cn=config
+changetype: modify
+add: passwordMinUppers
+passwordMinUppers: 1
+
+dn: cn=config
+changetype: modify
+add: passwordCheckSyntax
+passwordCheckSyntax: on
+
+dn: cn=config
+changetype: modify
+add: passwordGraceLimit
+passwordGraceLimit: 0
+
+dn: cn=config
+changetype: modify
+add: passwordMinCategories
+passwordMinCategories: 4
+
+dn: cn=config
+changetype: modify
+add: passwordHistory
+passwordHistory: on
+
+dn: cn=config
+changetype: modify
+add: passwordInHistory
+passwordInHistory: 5
+
+dn: cn=config
+changetype: modify
+add: passwordLockout
+passwordLockout: on
+
+dn: cn=config
+changetype: modify
+add: passwordLockoutDuration
+passwordLockoutDuration: 1800
+
+dn: cn=config
+changetype: modify
+add: passwordMaxFailure
+passwordMaxFailure: 5
