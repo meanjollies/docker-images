@@ -64,7 +64,7 @@ objectClass: top
 objectClass: posixAccount
 gidNumber: 666
 uidNumber: 10004
-sn: Horobitz
+sn: Horovitz
 cn: Adam Horovitz
 givenName: Adam
 mail: adam.horovitz@hellonasty.c0m
